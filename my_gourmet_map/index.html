@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyGourmetMap - 公式サポート＆プライバシーポリシー</title>
+    <style>
+        :root {
+            --ink: #2d1f1a;
+            --paper: #fffaf3;
+            --sun: #ff8a3d;
+            --tomato: #e24c3b;
+            --leaf: #3f8f5b;
+            --card: rgba(255, 255, 255, 0.84);
+            --line: rgba(45, 31, 26, 0.16);
+            --shadow: 0 20px 45px rgba(92, 38, 17, 0.18);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            color: var(--ink);
+            background:
+                radial-gradient(circle at 12% 18%, rgba(255, 196, 118, 0.46), transparent 35%),
+                radial-gradient(circle at 86% 6%, rgba(226, 76, 59, 0.26), transparent 34%),
+                linear-gradient(155deg, #fff8ee 0%, #fff1e4 44%, #ffe7cf 100%);
+            font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .hero {
+            padding: 72px 20px 96px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 22px;
+            transform: translateX(-50%);
+            width: min(740px, 88vw);
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, rgba(226, 76, 59, 0.45) 25%, rgba(63, 143, 91, 0.45) 75%, transparent 100%);
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.72);
+            border: 1px solid rgba(226, 76, 59, 0.3);
+            border-radius: 999px;
+            padding: 6px 16px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            font-size: 0.76rem;
+            color: var(--tomato);
+        }
+
+        h1 {
+            margin: 14px 0 8px;
+            font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+            font-weight: 700;
+            font-size: clamp(2rem, 4.5vw, 3.4rem);
+            letter-spacing: 0.04em;
+        }
+
+        .lead {
+            margin: 0 auto;
+            max-width: 620px;
+            font-size: 1.05rem;
+            color: rgba(45, 31, 26, 0.82);
+        }
+
+        main {
+            width: min(960px, calc(100% - 32px));
+            margin: -42px auto 40px;
+            padding: 0;
+        }
+
+        .panel {
+            background: var(--card);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            padding: 32px;
+            margin-bottom: 18px;
+            animation: rise 0.72s ease both;
+        }
+
+        .panel:nth-of-type(2) {
+            animation-delay: 0.08s;
+        }
+
+        .panel:nth-of-type(3) {
+            animation-delay: 0.16s;
+        }
+
+        .panel:nth-of-type(4) {
+            animation-delay: 0.24s;
+        }
+
+        @keyframes rise {
+            from {
+                opacity: 0;
+                transform: translateY(18px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            margin: 0 0 14px;
+            font-size: 1.45rem;
+            font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            border-radius: 5px;
+            background: linear-gradient(135deg, var(--sun), var(--tomato));
+            transform: rotate(45deg);
+            flex-shrink: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .feature-grid {
+            margin-top: 18px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+        }
+
+        .feature {
+            padding: 16px;
+            border-radius: 16px;
+            border: 1px solid rgba(226, 76, 59, 0.2);
+            background: linear-gradient(160deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 240, 223, 0.82) 100%);
+        }
+
+        .feature strong {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--tomato);
+        }
+
+        h3 {
+            margin: 20px 0 8px;
+            font-size: 1.04rem;
+            color: var(--leaf);
+            border-bottom: 1px solid rgba(63, 143, 91, 0.24);
+            padding-bottom: 4px;
+        }
+
+        .contact {
+            margin-top: 14px;
+            padding: 18px;
+            border-radius: 16px;
+            border: 1px dashed rgba(63, 143, 91, 0.46);
+            background: rgba(239, 250, 244, 0.85);
+        }
+
+        a {
+            color: #cc3d2c;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .muted {
+            margin-top: 10px;
+            font-size: 0.88rem;
+            color: rgba(45, 31, 26, 0.72);
+        }
+
+        .date {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: rgba(45, 31, 26, 0.72);
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.84rem;
+            color: rgba(45, 31, 26, 0.62);
+            padding: 14px 20px 28px;
+        }
+
+        @media (max-width: 760px) {
+            .hero {
+                padding: 56px 18px 74px;
+            }
+
+            main {
+                width: min(960px, calc(100% - 18px));
+                margin-top: -26px;
+            }
+
+            .panel {
+                padding: 22px;
+                border-radius: 18px;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <span class="badge">OFFICIAL SUPPORT</span>
+        <h1>MyGourmetMap</h1>
+        <p class="lead">行きたい店を地図で管理して、食べ歩きをもっと快適にするためのグルメマップアプリです。</p>
+    </header>
+
+    <main>
+        <section class="panel" id="overview">
+            <h2>アプリの概要</h2>
+            <p>「MyGourmetMap」は、気になる飲食店を地図上に保存し、訪問履歴やメモを一元管理できるアプリです。現在地周辺の候補確認から、次の外食計画までスムーズに行えます。</p>
+            <div class="feature-grid">
+                <article class="feature">
+                    <strong>ピンで直感的に保存</strong>
+                    店舗を地図上のピンとして登録し、エリアごとの行きたい店を見える化します。
+                </article>
+                <article class="feature">
+                    <strong>カテゴリとメモ管理</strong>
+                    ジャンルや予算帯、メモを付けて、あとで迷わず店を選べます。
+                </article>
+                <article class="feature">
+                    <strong>訪問ログの記録</strong>
+                    訪問日や評価を残して、リピート候補や未訪問店を整理できます。
+                </article>
+                <article class="feature">
+                    <strong>検索とフィルタ</strong>
+                    地域・カテゴリ・訪問状況で絞り込み、目的に合った店を素早く表示します。
+                </article>
+            </div>
+        </section>
+
+        <section class="panel" id="support">
+            <h2>サポート / お問い合わせ</h2>
+            <p>アプリの使い方、不具合報告、機能要望は以下の窓口へご連絡ください。内容を確認のうえ、順次対応します。</p>
+            <div class="contact">
+                <strong>サポート窓口（メール）</strong><br>
+                <a href="mailto:tkbs0530+mygourmetmap@gmail.com">tkbs0530+mygourmetmap@gmail.com</a>
+                <p class="muted">※お問い合わせ時は、端末名・OSバージョン・発生手順の記載にご協力ください。</p>
+            </div>
+        </section>
+
+        <section class="panel" id="privacy">
+            <h2>プライバシーポリシー</h2>
+
+            <h3>1. 取得する情報</h3>
+            <p>本アプリは、氏名や電話番号などの個人情報を必須で収集しません。登録した店舗情報・メモ・設定は、原則として利用端末内に保存されます。</p>
+
+            <h3>2. 位置情報の利用</h3>
+            <p>地図表示や現在地周辺検索のために位置情報を利用する場合があります。位置情報はアプリ機能提供の目的でのみ使用し、不要な常時取得は行いません。</p>
+
+            <h3>3. 広告および解析</h3>
+            <p>無料提供を継続するため、広告配信サービスや利用状況解析ツールを利用する場合があります。これらにより、個人を直接特定しない範囲の識別子情報が扱われることがあります。</p>
+
+            <h3>4. 免責事項</h3>
+            <p>掲載情報や保存データの正確性・完全性は保証されません。本アプリの利用により生じた損害について、開発者は法令上認められる範囲で責任を負いません。</p>
+
+            <h3>5. ポリシー変更</h3>
+            <p>本ポリシーは必要に応じて改定されます。改定後の内容は本ページに掲載した時点で効力を生じます。</p>
+
+            <p class="date">制定日：2026年2月22日（最終更新：2026年2月22日）</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 MyGourmetMap Project
+    </footer>
+</body>
+
+</html>
